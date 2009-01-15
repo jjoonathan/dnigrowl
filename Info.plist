@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Dni</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.Growl.DniSmoke</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>DISP</string>
+	<key>CFBundleSignature</key>
+	<string>GRRR</string>
+	<key>CFBundleVersion</key>
+	<string>1.1</string>
+	<key>CSResourcesFileMapped</key>
+	<true/>
+	<key>NSPrincipalClass</key>
+	<string>GrowlDniSmokeDisplay</string>
+	<key>CFBundleName</key>
+	<string>Dni</string>
+	<key>GrowlPluginAuthor</key>
+	<string>Jonathan deWerd</string>
+	<key>GrowlPluginDescription</key>
+	<string>A D&apos;ni version of the smoke style</string>
+</dict>
+</plist>

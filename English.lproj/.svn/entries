@@ -1,0 +1,31 @@
+8
+
+dir
+4814
+svn://src.growl.info/growl/trunk/Plugins/Displays/Smoke/English.lproj
+svn://src.growl.info/growl
+
+
+
+2007-12-08T07:21:17.660281Z
+4730
+bgannin
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e274d63c-9ee0-0310-ac37-d19d4f03b9fb
+
+SmokePrefs.nib
+dir
+

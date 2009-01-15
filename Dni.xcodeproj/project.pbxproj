@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		FC179F050E9978DF0067225A /* GrowlDniSmokeWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC179EFC0E9978DF0067225A /* GrowlDniSmokeWindowView.m */; };
+		FC179F060E9978DF0067225A /* GrowlDniSmokeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC179EFE0E9978DF0067225A /* GrowlDniSmokeWindowController.m */; };
+		FC179F070E9978DF0067225A /* GrowlDniSmokePrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC179F000E9978DF0067225A /* GrowlDniSmokePrefsController.m */; };
+		FC179F080E9978DF0067225A /* GrowlDniSmokeDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = FC179F020E9978DF0067225A /* GrowlDniSmokeDisplay.m */; };
+		FC17A1490E997EC70067225A /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC17A1480E997EC70067225A /* PreferencePanes.framework */; };
+		FC17A14D0E9980540067225A /* GrowlBezierPathAdditions.c in Sources */ = {isa = PBXBuildFile; fileRef = FC17A14B0E9980540067225A /* GrowlBezierPathAdditions.c */; };
+		FC17A14E0E9980540067225A /* CFDictionaryAdditions.c in Sources */ = {isa = PBXBuildFile; fileRef = FC17A14C0E9980540067225A /* CFDictionaryAdditions.c */; };
+		FC17A1D40E99B7EE0067225A /* DniSmokePrefs.nib in Resources */ = {isa = PBXBuildFile; fileRef = FC17A1D20E99B7EE0067225A /* DniSmokePrefs.nib */; };
+		FCD30B390F158E7300367CAD /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD30B380F158E7200367CAD /* Growl.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF630370AF2F00C91783 /* Dni_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dni_Prefix.pch; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* Dni.growlView */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dni.growlView; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		FC0C94860E99573400D115D3 /* TestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestApp-Info.plist"; sourceTree = "<group>"; };
+		FC179EFC0E9978DF0067225A /* GrowlDniSmokeWindowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowlDniSmokeWindowView.m; sourceTree = "<group>"; };
+		FC179EFD0E9978DF0067225A /* GrowlDniSmokeWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlDniSmokeWindowView.h; sourceTree = "<group>"; };
+		FC179EFE0E9978DF0067225A /* GrowlDniSmokeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowlDniSmokeWindowController.m; sourceTree = "<group>"; };
+		FC179EFF0E9978DF0067225A /* GrowlDniSmokeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlDniSmokeWindowController.h; sourceTree = "<group>"; };
+		FC179F000E9978DF0067225A /* GrowlDniSmokePrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowlDniSmokePrefsController.m; sourceTree = "<group>"; };
+		FC179F010E9978DF0067225A /* GrowlDniSmokePrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlDniSmokePrefsController.h; sourceTree = "<group>"; };
+		FC179F020E9978DF0067225A /* GrowlDniSmokeDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowlDniSmokeDisplay.m; sourceTree = "<group>"; };
+		FC179F030E9978DF0067225A /* GrowlDniSmokeDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlDniSmokeDisplay.h; sourceTree = "<group>"; };
+		FC179F040E9978DF0067225A /* GrowlDniSmokeDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlDniSmokeDefines.h; sourceTree = "<group>"; };
+		FC179FDA0E997C290067225A /* ACImageAndTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACImageAndTextCell.h; sourceTree = "<group>"; };
+		FC179FDB0E997C290067225A /* AEVTBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEVTBuilder.h; sourceTree = "<group>"; };
+		FC179FDC0E997C290067225A /* Amazon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Amazon.h; sourceTree = "<group>"; };
+		FC179FDD0E997C290067225A /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		FC179FDE0E997C290067225A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC179FDF0E997C290067225A /* ARTchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTchive.h; sourceTree = "<group>"; };
+		FC179FE00E997C290067225A /* ARTchiveIconSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTchiveIconSource.h; sourceTree = "<group>"; };
+		FC179FE10E997C290067225A /* ARTchiveStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTchiveStringAdditions.h; sourceTree = "<group>"; };
+		FC179FE20E997C290067225A /* AWRippler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWRippler.h; sourceTree = "<group>"; };
+		FC179FE30E997C290067225A /* AXCArrayControllerWithDragAndDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXCArrayControllerWithDragAndDrop.h; sourceTree = "<group>"; };
+		FC179FE40E997C290067225A /* BeepAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeepAdditions.h; sourceTree = "<group>"; };
+		FC179FE50E997C290067225A /* BeepController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeepController.h; sourceTree = "<group>"; };
+		FC179FE60E997C290067225A /* BluetoothNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothNotifier.h; sourceTree = "<group>"; };
+		FC179FE70E997C290067225A /* BZIsLessThanOrEqualToOneValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZIsLessThanOrEqualToOneValueTransformer.h; sourceTree = "<group>"; };
+		FC179FE80E997C290067225A /* BZIsNotOneValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZIsNotOneValueTransformer.h; sourceTree = "<group>"; };
+		FC179FE90E997C290067225A /* BZIsNotZeroValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZIsNotZeroValueTransformer.h; sourceTree = "<group>"; };
+		FC179FEA0E997C290067225A /* cdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdsa.h; sourceTree = "<group>"; };
+		FC179FEB0E997C290067225A /* CFDictionaryAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFDictionaryAdditions.h; sourceTree = "<group>"; };
+		FC179FEC0E997C290067225A /* CFGrowlAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFGrowlAdditions.h; sourceTree = "<group>"; };
+		FC179FED0E997C290067225A /* CFGrowlDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFGrowlDefines.h; sourceTree = "<group>"; };
+		FC179FEE0E997C290067225A /* CFMutableDictionaryAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFMutableDictionaryAdditions.h; sourceTree = "<group>"; };
+		FC179FEF0E997C290067225A /* CFMutableStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFMutableStringAdditions.h; sourceTree = "<group>"; };
+		FC179FF00E997C290067225A /* CFURLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFURLAdditions.h; sourceTree = "<group>"; };
+		FC179FF10E997C290067225A /* CoreGraphicsServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsServices.h; sourceTree = "<group>"; };
+		FC179FF20E997C290067225A /* Delicious.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Delicious.h; sourceTree = "<group>"; };
+		FC179FF30E997C290067225A /* DisplayPluginNameWithDefaultTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayPluginNameWithDefaultTransformer.h; sourceTree = "<group>"; };
+		FC179FF40E997C290067225A /* DisplayPluginsWithDefaultArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayPluginsWithDefaultArrayController.h; sourceTree = "<group>"; };
+		FC179FF50E997C290067225A /* FireWireNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireWireNotifier.h; sourceTree = "<group>"; };
+		FC179FF60E997C290067225A /* GRDEAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRDEAppDelegate.h; sourceTree = "<group>"; };
+		FC179FF70E997C290067225A /* GRDEDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRDEDocument.h; sourceTree = "<group>"; };
+		FC179FF80E997C290067225A /* GRDEImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRDEImporter.h; sourceTree = "<group>"; };
+		FC179FF90E997C290067225A /* GRDENotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRDENotification.h; sourceTree = "<group>"; };
+		FC179FFA0E997C290067225A /* GRDENotificationDictionaryKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRDENotificationDictionaryKeys.h; sourceTree = "<group>"; };
+		FC179FFB0E997C290067225A /* Growl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Growl.h; sourceTree = "<group>"; };
+		FC179FFC0E997C290067225A /* GrowlAbstractSingletonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlAbstractSingletonObject.h; sourceTree = "<group>"; };
+		FC179FFD0E997C290067225A /* GrowlAmazonXMLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlAmazonXMLResponse.h; sourceTree = "<group>"; };
+		FC179FFE0E997C290067225A /* GrowlApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlApplication.h; sourceTree = "<group>"; };
+		FC179FFF0E997C290067225A /* GrowlApplicationBridge-Carbon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GrowlApplicationBridge-Carbon.h"; sourceTree = "<group>"; };
+		FC17A0000E997C290067225A /* GrowlApplicationBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlApplicationBridge.h; sourceTree = "<group>"; };
+		FC17A0010E997C290067225A /* GrowlApplicationBridgePathway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlApplicationBridgePathway.h; sourceTree = "<group>"; };
+		FC17A0020E997C290067225A /* GrowlApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlApplicationController.h; sourceTree = "<group>"; };
+		FC17A0030E997C290067225A /* GrowlApplicationNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlApplicationNotification.h; sourceTree = "<group>"; };
+		FC17A0040E997C290067225A /* GrowlApplicationTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlApplicationTicket.h; sourceTree = "<group>"; };
+		FC17A0050E997C290067225A /* GrowlAppNameClickNotificationTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlAppNameClickNotificationTransformer.h; sourceTree = "<group>"; };
+		FC17A0060E997C290067225A /* GrowlBezelDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlBezelDisplay.h; sourceTree = "<group>"; };
+		FC17A0070E997C290067225A /* GrowlBezelPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlBezelPrefs.h; sourceTree = "<group>"; };
+		FC17A0080E997C290067225A /* GrowlBezelWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlBezelWindowController.h; sourceTree = "<group>"; };
+		FC17A0090E997C290067225A /* GrowlBezelWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlBezelWindowView.h; sourceTree = "<group>"; };
+		FC17A00A0E997C290067225A /* GrowlBezierPathAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlBezierPathAdditions.h; sourceTree = "<group>"; };
+		FC17A00B0E997C290067225A /* GrowlBrowserEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlBrowserEntry.h; sourceTree = "<group>"; };
+		FC17A00C0E997C290067225A /* GrowlBrushedDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlBrushedDefines.h; sourceTree = "<group>"; };
+		FC17A00D0E997C290067225A /* GrowlBrushedDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlBrushedDisplay.h; sourceTree = "<group>"; };
+		FC17A00E0E997C290067225A /* GrowlBrushedPrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlBrushedPrefsController.h; sourceTree = "<group>"; };
+		FC17A00F0E997C290067225A /* GrowlBrushedWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlBrushedWindowController.h; sourceTree = "<group>"; };
+		FC17A0100E997C290067225A /* GrowlBrushedWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlBrushedWindowView.h; sourceTree = "<group>"; };
+		FC17A0110E997C290067225A /* GrowlBubblesDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlBubblesDefines.h; sourceTree = "<group>"; };
+		FC17A0120E997C290067225A /* GrowlBubblesDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlBubblesDisplay.h; sourceTree = "<group>"; };
+		FC17A0130E997C290067225A /* GrowlBubblesPrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlBubblesPrefsController.h; sourceTree = "<group>"; };
+		FC17A0140E997C290067225A /* GrowlBubblesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlBubblesWindowController.h; sourceTree = "<group>"; };
+		FC17A0150E997C290067225A /* GrowlBubblesWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlBubblesWindowView.h; sourceTree = "<group>"; };
+		FC17A0160E997C290067225A /* GrowlCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlCode.h; sourceTree = "<group>"; };
+		FC17A0170E997C290067225A /* GrowlDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlDefines.h; sourceTree = "<group>"; };
+		FC17A0180E997C290067225A /* GrowlDefinesInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlDefinesInternal.h; sourceTree = "<group>"; };
+		FC17A0190E997C290067225A /* GrowlDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlDelegate.h; sourceTree = "<group>"; };
+		FC17A01A0E997C290067225A /* GrowlDisplayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlDisplayPlugin.h; sourceTree = "<group>"; };
+		FC17A01B0E997C290067225A /* GrowlDisplayProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlDisplayProtocol.h; sourceTree = "<group>"; };
+		FC17A01C0E997C290067225A /* GrowlDisplayWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlDisplayWindowController.h; sourceTree = "<group>"; };
+		FC17A01D0E997C290067225A /* GrowlDistributedNotificationPathway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlDistributedNotificationPathway.h; sourceTree = "<group>"; };
+		FC17A01E0E997C290067225A /* GrowlFadingWindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlFadingWindowTransition.h; sourceTree = "<group>"; };
+		FC17A01F0E997C290067225A /* GrowlFlippingWindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlFlippingWindowTransition.h; sourceTree = "<group>"; };
+		FC17A0200E997C290067225A /* GrowliCalDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowliCalDefines.h; sourceTree = "<group>"; };
+		FC17A0210E997C290067225A /* GrowliCalDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowliCalDisplay.h; sourceTree = "<group>"; };
+		FC17A0220E997C290067225A /* GrowliCalPrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowliCalPrefsController.h; sourceTree = "<group>"; };
+		FC17A0230E997C290067225A /* GrowliCalWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowliCalWindowController.h; sourceTree = "<group>"; };
+		FC17A0240E997C290067225A /* GrowliCalWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowliCalWindowView.h; sourceTree = "<group>"; };
+		FC17A0250E997C290067225A /* GrowlIdleStatusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlIdleStatusController.h; sourceTree = "<group>"; };
+		FC17A0260E997C290067225A /* GrowlImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlImageAdditions.h; sourceTree = "<group>"; };
+		FC17A0270E997C290067225A /* GrowlInstallationPrompt-Carbon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GrowlInstallationPrompt-Carbon.h"; sourceTree = "<group>"; };
+		FC17A0280E997C290067225A /* GrowlInstallationPrompt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlInstallationPrompt.h; sourceTree = "<group>"; };
+		FC17A0290E997C290067225A /* GrowlLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlLog.h; sourceTree = "<group>"; };
+		FC17A02A0E997C290067225A /* GrowlMail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlMail.h; sourceTree = "<group>"; };
+		FC17A02B0E997C290067225A /* GrowlMailMeDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlMailMeDisplay.h; sourceTree = "<group>"; };
+		FC17A02C0E997C290067225A /* GrowlMailMePrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlMailMePrefs.h; sourceTree = "<group>"; };
+		FC17A02D0E997C290067225A /* GrowlMailPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlMailPreferences.h; sourceTree = "<group>"; };
+		FC17A02E0E997C290067225A /* GrowlMailPreferencesModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlMailPreferencesModule.h; sourceTree = "<group>"; };
+		FC17A02F0E997C290067225A /* GrowlMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlMenu.h; sourceTree = "<group>"; };
+		FC17A0300E997C290067225A /* GrowlMusicVideoDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlMusicVideoDisplay.h; sourceTree = "<group>"; };
+		FC17A0310E997C290067225A /* GrowlMusicVideoPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlMusicVideoPrefs.h; sourceTree = "<group>"; };
+		FC17A0320E997C290067225A /* GrowlMusicVideoWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlMusicVideoWindowController.h; sourceTree = "<group>"; };
+		FC17A0330E997C290067225A /* GrowlMusicVideoWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlMusicVideoWindowView.h; sourceTree = "<group>"; };
+		FC17A0340E997C290067225A /* GrowlNanoDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlNanoDisplay.h; sourceTree = "<group>"; };
+		FC17A0350E997C290067225A /* GrowlNanoPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlNanoPrefs.h; sourceTree = "<group>"; };
+		FC17A0360E997C290067225A /* GrowlNanoWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlNanoWindowController.h; sourceTree = "<group>"; };
+		FC17A0370E997C290067225A /* GrowlNanoWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlNanoWindowView.h; sourceTree = "<group>"; };
+		FC17A0380E997C290067225A /* GrowlNonCopyingMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlNonCopyingMutableDictionary.h; sourceTree = "<group>"; };
+		FC17A0390E997C290067225A /* GrowlNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlNotificationCenter.h; sourceTree = "<group>"; };
+		FC17A03A0E997C290067225A /* GrowlNotificationDisplayBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlNotificationDisplayBridge.h; sourceTree = "<group>"; };
+		FC17A03B0E997C290067225A /* GrowlNotificationTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlNotificationTicket.h; sourceTree = "<group>"; };
+		FC17A03C0E997C290067225A /* GrowlNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlNotificationView.h; sourceTree = "<group>"; };
+		FC17A03D0E997C290067225A /* GrowlNotifyScriptCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlNotifyScriptCommand.h; sourceTree = "<group>"; };
+		FC17A03E0E997C290067225A /* GrowlNSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlNSLog.h; sourceTree = "<group>"; };
+		FC17A03F0E997C290067225A /* GrowlPathUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlPathUtilities.h; sourceTree = "<group>"; };
+		FC17A0400E997C290067225A /* GrowlPathway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlPathway.h; sourceTree = "<group>"; };
+		FC17A0410E997C290067225A /* GrowlPathwayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlPathwayController.h; sourceTree = "<group>"; };
+		FC17A0420E997C290067225A /* GrowlPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlPlugin.h; sourceTree = "<group>"; };
+		FC17A0430E997C290067225A /* GrowlPluginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlPluginController.h; sourceTree = "<group>"; };
+		FC17A0440E997C290067225A /* GrowlPositionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlPositionController.h; sourceTree = "<group>"; };
+		FC17A0450E997C290067225A /* GrowlPositioningDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlPositioningDefines.h; sourceTree = "<group>"; };
+		FC17A0460E997C290067225A /* GrowlPositionPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlPositionPicker.h; sourceTree = "<group>"; };
+		FC17A0470E997C290067225A /* GrowlPreferencePane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlPreferencePane.h; sourceTree = "<group>"; };
+		FC17A0480E997C290067225A /* GrowlPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlPreferencesController.h; sourceTree = "<group>"; };
+		FC17A0490E997C290067225A /* GrowlPropertyListFilePathway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlPropertyListFilePathway.h; sourceTree = "<group>"; };
+		FC17A04A0E997C290067225A /* GrowlRegisterScriptCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlRegisterScriptCommand.h; sourceTree = "<group>"; };
+		FC17A04B0E997C290067225A /* GrowlRemotePathway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlRemotePathway.h; sourceTree = "<group>"; };
+		FC17A04C0E997C290067225A /* GrowlRipplingWindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlRipplingWindowTransition.h; sourceTree = "<group>"; };
+		FC17A04D0E997C290067225A /* GrowlSafari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlSafari.h; sourceTree = "<group>"; };
+		FC17A04E0E997C290067225A /* GrowlSafariLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlSafariLoader.h; sourceTree = "<group>"; };
+		FC17A04F0E997C290067225A /* GrowlScaleWindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlScaleWindowTransition.h; sourceTree = "<group>"; };
+		FC17A0500E997C290067225A /* GrowlShrinkingWindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlShrinkingWindowTransition.h; sourceTree = "<group>"; };
+		FC17A0510E997C290067225A /* GrowlSlidingViewTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlSlidingViewTransition.h; sourceTree = "<group>"; };
+		FC17A0520E997C290067225A /* GrowlSlidingWindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlSlidingWindowTransition.h; sourceTree = "<group>"; };
+		FC17A0530E997C290067225A /* GrowlSmokeDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlSmokeDefines.h; sourceTree = "<group>"; };
+		FC17A0540E997C290067225A /* GrowlSmokeDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlSmokeDisplay.h; sourceTree = "<group>"; };
+		FC17A0550E997C290067225A /* GrowlSmokePrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlSmokePrefsController.h; sourceTree = "<group>"; };
+		FC17A0560E997C290067225A /* GrowlSmokeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlSmokeWindowController.h; sourceTree = "<group>"; };
+		FC17A0570E997C290067225A /* GrowlSmokeWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlSmokeWindowView.h; sourceTree = "<group>"; };
+		FC17A0580E997C290067225A /* GrowlSMSDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlSMSDisplay.h; sourceTree = "<group>"; };
+		FC17A0590E997C290067225A /* GrowlSMSPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlSMSPrefs.h; sourceTree = "<group>"; };
+		FC17A05A0E997C290067225A /* GrowlSpeechDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlSpeechDefines.h; sourceTree = "<group>"; };
+		FC17A05B0E997C290067225A /* GrowlSpeechDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlSpeechDisplay.h; sourceTree = "<group>"; };
+		FC17A05C0E997C290067225A /* GrowlSpeechPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlSpeechPrefs.h; sourceTree = "<group>"; };
+		FC17A05D0E997C290067225A /* GrowlTCPPathway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlTCPPathway.h; sourceTree = "<group>"; };
+		FC17A05E0E997C290067225A /* GrowlThreadedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlThreadedView.h; sourceTree = "<group>"; };
+		FC17A05F0E997C290067225A /* GrowlTicketController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlTicketController.h; sourceTree = "<group>"; };
+		FC17A0600E997C290067225A /* GrowlTunes-Amazon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GrowlTunes-Amazon.h"; sourceTree = "<group>"; };
+		FC17A0610E997C290067225A /* GrowlTunesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlTunesController.h; sourceTree = "<group>"; };
+		FC17A0620E997C290067225A /* GrowlTunesPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlTunesPlugin.h; sourceTree = "<group>"; };
+		FC17A0630E997C290067225A /* GrowlUDPPathway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlUDPPathway.h; sourceTree = "<group>"; };
+		FC17A0640E997C290067225A /* GrowlUDPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlUDPUtils.h; sourceTree = "<group>"; };
+		FC17A0650E997C290067225A /* GrowlVersionUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlVersionUtilities.h; sourceTree = "<group>"; };
+		FC17A0660E997C290067225A /* GrowlViewTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlViewTransition.h; sourceTree = "<group>"; };
+		FC17A0670E997C290067225A /* GrowlWebKitDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlWebKitDefines.h; sourceTree = "<group>"; };
+		FC17A0680E997C290067225A /* GrowlWebKitDisplayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlWebKitDisplayPlugin.h; sourceTree = "<group>"; };
+		FC17A0690E997C290067225A /* GrowlWebKitPluginHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlWebKitPluginHandler.h; sourceTree = "<group>"; };
+		FC17A06A0E997C290067225A /* GrowlWebKitPrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlWebKitPrefsController.h; sourceTree = "<group>"; };
+		FC17A06B0E997C290067225A /* GrowlWebKitWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlWebKitWindowController.h; sourceTree = "<group>"; };
+		FC17A06C0E997C290067225A /* GrowlWebKitWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlWebKitWindowView.h; sourceTree = "<group>"; };
+		FC17A06D0E997C290067225A /* GrowlWindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlWindowTransition.h; sourceTree = "<group>"; };
+		FC17A06E0E997C290067225A /* GrowlWipeWindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlWipeWindowTransition.h; sourceTree = "<group>"; };
+		FC17A06F0E997C290067225A /* GSWebBookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSWebBookmark.h; sourceTree = "<group>"; };
+		FC17A0700E997C290067225A /* GTPPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTPPlugin.h; sourceTree = "<group>"; };
+		FC17A0710E997C290067225A /* HotKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotKey.h; sourceTree = "<group>"; };
+		FC17A0720E997C290067225A /* iTunesAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesAPI.h; sourceTree = "<group>"; };
+		FC17A0730E997C290067225A /* iTunesVisualAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesVisualAPI.h; sourceTree = "<group>"; };
+		FC17A0740E997C290067225A /* LoginItemsAE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginItemsAE.h; sourceTree = "<group>"; };
+		FC17A0750E997C290067225A /* MailHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailHeaders.h; sourceTree = "<group>"; };
+		FC17A0760E997C290067225A /* MD5Authenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5Authenticator.h; sourceTree = "<group>"; };
+		FC17A0770E997C290067225A /* Message+GrowlMail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Message+GrowlMail.h"; sourceTree = "<group>"; };
+		FC17A0780E997C290067225A /* MessageFrameworkHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageFrameworkHeaders.h; sourceTree = "<group>"; };
+		FC17A0790E997C290067225A /* MyImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImageView.h; sourceTree = "<group>"; };
+		FC17A07A0E997C290067225A /* NetworkNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkNotifier.h; sourceTree = "<group>"; };
+		FC17A07B0E997C290067225A /* NotificationsArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationsArrayController.h; sourceTree = "<group>"; };
+		FC17A07C0E997C290067225A /* NSFileManager+Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Authentication.h"; sourceTree = "<group>"; };
+		FC17A07D0E997C290067225A /* NSMutableAttributedStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableAttributedStringAdditions.h; sourceTree = "<group>"; };
+		FC17A07E0E997C290067225A /* NSMutableDictionary+Intersection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Intersection.h"; sourceTree = "<group>"; };
+		FC17A07F0E997C290067225A /* NSMutableStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableStringAdditions.h; sourceTree = "<group>"; };
+		FC17A0800E997C290067225A /* NSPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSPreferences.h; sourceTree = "<group>"; };
+		FC17A0810E997C290067225A /* NSPreferencesModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSPreferencesModule.h; sourceTree = "<group>"; };
+		FC17A0820E997C290067225A /* NSSetAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSSetAdditions.h; sourceTree = "<group>"; };
+		FC17A0830E997C290067225A /* NSString+FinderLikeSorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FinderLikeSorting.h"; sourceTree = "<group>"; };
+		FC17A0840E997C290067225A /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringAdditions.h; sourceTree = "<group>"; };
+		FC17A0850E997C290067225A /* NSViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSViewAdditions.h; sourceTree = "<group>"; };
+		FC17A0860E997C290067225A /* NSWindow+Transforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+Transforms.h"; sourceTree = "<group>"; };
+		FC17A0870E997C290067225A /* NSWindowAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSWindowAdditions.h; sourceTree = "<group>"; };
+		FC17A0880E997C290067225A /* NSWorkspaceAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSWorkspaceAdditions.h; sourceTree = "<group>"; };
+		FC17A0890E997C290067225A /* PowerNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerNotifier.h; sourceTree = "<group>"; };
+		FC17A08A0E997C290067225A /* PrefPaneOpener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefPaneOpener.h; sourceTree = "<group>"; };
+		FC17A08B0E997C290067225A /* PriorityTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriorityTransformer.h; sourceTree = "<group>"; };
+		FC17A08C0E997C290067225A /* RRTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRTableView.h; sourceTree = "<group>"; };
+		FC17A08D0E997C290067225A /* Safari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Safari.h; sourceTree = "<group>"; };
+		FC17A08E0E997C290067225A /* sha2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha2.h; sourceTree = "<group>"; };
+		FC17A08F0E997C290067225A /* ShowTrackScriptCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowTrackScriptCommand.h; sourceTree = "<group>"; };
+		FC17A0900E997C290067225A /* SVNRevision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVNRevision.h; sourceTree = "<group>"; };
+		FC17A0910E997C290067225A /* SyncNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncNotifier.h; sourceTree = "<group>"; };
+		FC17A0920E997C290067225A /* SynergyIconSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynergyIconSource.h; sourceTree = "<group>"; };
+		FC17A0930E997C290067225A /* TclGrowler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TclGrowler.h; sourceTree = "<group>"; };
+		FC17A0940E997C290067225A /* TicketsArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketsArrayController.h; sourceTree = "<group>"; };
+		FC17A0950E997C290067225A /* USBNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBNotifier.h; sourceTree = "<group>"; };
+		FC17A0960E997C290067225A /* VolumeNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeNotifier.h; sourceTree = "<group>"; };
+		FC17A1480E997EC70067225A /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = /System/Library/Frameworks/PreferencePanes.framework; sourceTree = "<absolute>"; };
+		FC17A14B0E9980540067225A /* GrowlBezierPathAdditions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GrowlBezierPathAdditions.c; sourceTree = "<group>"; };
+		FC17A14C0E9980540067225A /* CFDictionaryAdditions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CFDictionaryAdditions.c; sourceTree = "<group>"; };
+		FC17A1D30E99B7EE0067225A /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/DniSmokePrefs.nib; sourceTree = "<group>"; };
+		FCD30B380F158E7200367CAD /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				FC17A1490E997EC70067225A /* PreferencePanes.framework in Frameworks */,
+				FCD30B390F158E7300367CAD /* Growl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* Dni */ = {
+			isa = PBXGroup;
+			children = (
+				FC179FD90E997C290067225A /* Headers */,
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+				FC0C94860E99573400D115D3 /* TestApp-Info.plist */,
+			);
+			name = Dni;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC17A1D20E99B7EE0067225A /* DniSmokePrefs.nib */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FC17A14B0E9980540067225A /* GrowlBezierPathAdditions.c */,
+				FC17A14C0E9980540067225A /* CFDictionaryAdditions.c */,
+				FC179EFC0E9978DF0067225A /* GrowlDniSmokeWindowView.m */,
+				FC179EFD0E9978DF0067225A /* GrowlDniSmokeWindowView.h */,
+				FC179EFE0E9978DF0067225A /* GrowlDniSmokeWindowController.m */,
+				FC179EFF0E9978DF0067225A /* GrowlDniSmokeWindowController.h */,
+				FC179F000E9978DF0067225A /* GrowlDniSmokePrefsController.m */,
+				FC179F010E9978DF0067225A /* GrowlDniSmokePrefsController.h */,
+				FC179F020E9978DF0067225A /* GrowlDniSmokeDisplay.m */,
+				FC179F030E9978DF0067225A /* GrowlDniSmokeDisplay.h */,
+				FC179F040E9978DF0067225A /* GrowlDniSmokeDefines.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCD30B380F158E7200367CAD /* Growl.framework */,
+				FC17A1480E997EC70067225A /* PreferencePanes.framework */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				D2F7E65807B2D6F200F64583 /* CoreData.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* Dni.growlView */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF630370AF2F00C91783 /* Dni_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		FC179FD90E997C290067225A /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				FC179FDA0E997C290067225A /* ACImageAndTextCell.h */,
+				FC179FDB0E997C290067225A /* AEVTBuilder.h */,
+				FC179FDC0E997C290067225A /* Amazon.h */,
+				FC179FDD0E997C290067225A /* AppController.h */,
+				FC179FDE0E997C290067225A /* AppDelegate.h */,
+				FC179FDF0E997C290067225A /* ARTchive.h */,
+				FC179FE00E997C290067225A /* ARTchiveIconSource.h */,
+				FC179FE10E997C290067225A /* ARTchiveStringAdditions.h */,
+				FC179FE20E997C290067225A /* AWRippler.h */,
+				FC179FE30E997C290067225A /* AXCArrayControllerWithDragAndDrop.h */,
+				FC179FE40E997C290067225A /* BeepAdditions.h */,
+				FC179FE50E997C290067225A /* BeepController.h */,
+				FC179FE60E997C290067225A /* BluetoothNotifier.h */,
+				FC179FE70E997C290067225A /* BZIsLessThanOrEqualToOneValueTransformer.h */,
+				FC179FE80E997C290067225A /* BZIsNotOneValueTransformer.h */,
+				FC179FE90E997C290067225A /* BZIsNotZeroValueTransformer.h */,
+				FC179FEA0E997C290067225A /* cdsa.h */,
+				FC179FEB0E997C290067225A /* CFDictionaryAdditions.h */,
+				FC179FEC0E997C290067225A /* CFGrowlAdditions.h */,
+				FC179FED0E997C290067225A /* CFGrowlDefines.h */,
+				FC179FEE0E997C290067225A /* CFMutableDictionaryAdditions.h */,
+				FC179FEF0E997C290067225A /* CFMutableStringAdditions.h */,
+				FC179FF00E997C290067225A /* CFURLAdditions.h */,
+				FC179FF10E997C290067225A /* CoreGraphicsServices.h */,
+				FC179FF20E997C290067225A /* Delicious.h */,
+				FC179FF30E997C290067225A /* DisplayPluginNameWithDefaultTransformer.h */,
+				FC179FF40E997C290067225A /* DisplayPluginsWithDefaultArrayController.h */,
+				FC179FF50E997C290067225A /* FireWireNotifier.h */,
+				FC179FF60E997C290067225A /* GRDEAppDelegate.h */,
+				FC179FF70E997C290067225A /* GRDEDocument.h */,
+				FC179FF80E997C290067225A /* GRDEImporter.h */,
+				FC179FF90E997C290067225A /* GRDENotification.h */,
+				FC179FFA0E997C290067225A /* GRDENotificationDictionaryKeys.h */,
+				FC179FFB0E997C290067225A /* Growl.h */,
+				FC179FFC0E997C290067225A /* GrowlAbstractSingletonObject.h */,
+				FC179FFD0E997C290067225A /* GrowlAmazonXMLResponse.h */,
+				FC179FFE0E997C290067225A /* GrowlApplication.h */,
+				FC179FFF0E997C290067225A /* GrowlApplicationBridge-Carbon.h */,
+				FC17A0000E997C290067225A /* GrowlApplicationBridge.h */,
+				FC17A0010E997C290067225A /* GrowlApplicationBridgePathway.h */,
+				FC17A0020E997C290067225A /* GrowlApplicationController.h */,
+				FC17A0030E997C290067225A /* GrowlApplicationNotification.h */,
+				FC17A0040E997C290067225A /* GrowlApplicationTicket.h */,
+				FC17A0050E997C290067225A /* GrowlAppNameClickNotificationTransformer.h */,
+				FC17A0060E997C290067225A /* GrowlBezelDisplay.h */,
+				FC17A0070E997C290067225A /* GrowlBezelPrefs.h */,
+				FC17A0080E997C290067225A /* GrowlBezelWindowController.h */,
+				FC17A0090E997C290067225A /* GrowlBezelWindowView.h */,
+				FC17A00A0E997C290067225A /* GrowlBezierPathAdditions.h */,
+				FC17A00B0E997C290067225A /* GrowlBrowserEntry.h */,
+				FC17A00C0E997C290067225A /* GrowlBrushedDefines.h */,
+				FC17A00D0E997C290067225A /* GrowlBrushedDisplay.h */,
+				FC17A00E0E997C290067225A /* GrowlBrushedPrefsController.h */,
+				FC17A00F0E997C290067225A /* GrowlBrushedWindowController.h */,
+				FC17A0100E997C290067225A /* GrowlBrushedWindowView.h */,
+				FC17A0110E997C290067225A /* GrowlBubblesDefines.h */,
+				FC17A0120E997C290067225A /* GrowlBubblesDisplay.h */,
+				FC17A0130E997C290067225A /* GrowlBubblesPrefsController.h */,
+				FC17A0140E997C290067225A /* GrowlBubblesWindowController.h */,
+				FC17A0150E997C290067225A /* GrowlBubblesWindowView.h */,
+				FC17A0160E997C290067225A /* GrowlCode.h */,
+				FC17A0170E997C290067225A /* GrowlDefines.h */,
+				FC17A0180E997C290067225A /* GrowlDefinesInternal.h */,
+				FC17A0190E997C290067225A /* GrowlDelegate.h */,
+				FC17A01A0E997C290067225A /* GrowlDisplayPlugin.h */,
+				FC17A01B0E997C290067225A /* GrowlDisplayProtocol.h */,
+				FC17A01C0E997C290067225A /* GrowlDisplayWindowController.h */,
+				FC17A01D0E997C290067225A /* GrowlDistributedNotificationPathway.h */,
+				FC17A01E0E997C290067225A /* GrowlFadingWindowTransition.h */,
+				FC17A01F0E997C290067225A /* GrowlFlippingWindowTransition.h */,
+				FC17A0200E997C290067225A /* GrowliCalDefines.h */,
+				FC17A0210E997C290067225A /* GrowliCalDisplay.h */,
+				FC17A0220E997C290067225A /* GrowliCalPrefsController.h */,
+				FC17A0230E997C290067225A /* GrowliCalWindowController.h */,
+				FC17A0240E997C290067225A /* GrowliCalWindowView.h */,
+				FC17A0250E997C290067225A /* GrowlIdleStatusController.h */,
+				FC17A0260E997C290067225A /* GrowlImageAdditions.h */,
+				FC17A0270E997C290067225A /* GrowlInstallationPrompt-Carbon.h */,
+				FC17A0280E997C290067225A /* GrowlInstallationPrompt.h */,
+				FC17A0290E997C290067225A /* GrowlLog.h */,
+				FC17A02A0E997C290067225A /* GrowlMail.h */,
+				FC17A02B0E997C290067225A /* GrowlMailMeDisplay.h */,
+				FC17A02C0E997C290067225A /* GrowlMailMePrefs.h */,
+				FC17A02D0E997C290067225A /* GrowlMailPreferences.h */,
+				FC17A02E0E997C290067225A /* GrowlMailPreferencesModule.h */,
+				FC17A02F0E997C290067225A /* GrowlMenu.h */,
+				FC17A0300E997C290067225A /* GrowlMusicVideoDisplay.h */,
+				FC17A0310E997C290067225A /* GrowlMusicVideoPrefs.h */,
+				FC17A0320E997C290067225A /* GrowlMusicVideoWindowController.h */,
+				FC17A0330E997C290067225A /* GrowlMusicVideoWindowView.h */,
+				FC17A0340E997C290067225A /* GrowlNanoDisplay.h */,
+				FC17A0350E997C290067225A /* GrowlNanoPrefs.h */,
+				FC17A0360E997C290067225A /* GrowlNanoWindowController.h */,
+				FC17A0370E997C290067225A /* GrowlNanoWindowView.h */,
+				FC17A0380E997C290067225A /* GrowlNonCopyingMutableDictionary.h */,
+				FC17A0390E997C290067225A /* GrowlNotificationCenter.h */,
+				FC17A03A0E997C290067225A /* GrowlNotificationDisplayBridge.h */,
+				FC17A03B0E997C290067225A /* GrowlNotificationTicket.h */,
+				FC17A03C0E997C290067225A /* GrowlNotificationView.h */,
+				FC17A03D0E997C290067225A /* GrowlNotifyScriptCommand.h */,
+				FC17A03E0E997C290067225A /* GrowlNSLog.h */,
+				FC17A03F0E997C290067225A /* GrowlPathUtilities.h */,
+				FC17A0400E997C290067225A /* GrowlPathway.h */,
+				FC17A0410E997C290067225A /* GrowlPathwayController.h */,
+				FC17A0420E997C290067225A /* GrowlPlugin.h */,
+				FC17A0430E997C290067225A /* GrowlPluginController.h */,
+				FC17A0440E997C290067225A /* GrowlPositionController.h */,
+				FC17A0450E997C290067225A /* GrowlPositioningDefines.h */,
+				FC17A0460E997C290067225A /* GrowlPositionPicker.h */,
+				FC17A0470E997C290067225A /* GrowlPreferencePane.h */,
+				FC17A0480E997C290067225A /* GrowlPreferencesController.h */,
+				FC17A0490E997C290067225A /* GrowlPropertyListFilePathway.h */,
+				FC17A04A0E997C290067225A /* GrowlRegisterScriptCommand.h */,
+				FC17A04B0E997C290067225A /* GrowlRemotePathway.h */,
+				FC17A04C0E997C290067225A /* GrowlRipplingWindowTransition.h */,
+				FC17A04D0E997C290067225A /* GrowlSafari.h */,
+				FC17A04E0E997C290067225A /* GrowlSafariLoader.h */,
+				FC17A04F0E997C290067225A /* GrowlScaleWindowTransition.h */,
+				FC17A0500E997C290067225A /* GrowlShrinkingWindowTransition.h */,
+				FC17A0510E997C290067225A /* GrowlSlidingViewTransition.h */,
+				FC17A0520E997C290067225A /* GrowlSlidingWindowTransition.h */,
+				FC17A0530E997C290067225A /* GrowlSmokeDefines.h */,
+				FC17A0540E997C290067225A /* GrowlSmokeDisplay.h */,
+				FC17A0550E997C290067225A /* GrowlSmokePrefsController.h */,
+				FC17A0560E997C290067225A /* GrowlSmokeWindowController.h */,
+				FC17A0570E997C290067225A /* GrowlSmokeWindowView.h */,
+				FC17A0580E997C290067225A /* GrowlSMSDisplay.h */,
+				FC17A0590E997C290067225A /* GrowlSMSPrefs.h */,
+				FC17A05A0E997C290067225A /* GrowlSpeechDefines.h */,
+				FC17A05B0E997C290067225A /* GrowlSpeechDisplay.h */,
+				FC17A05C0E997C290067225A /* GrowlSpeechPrefs.h */,
+				FC17A05D0E997C290067225A /* GrowlTCPPathway.h */,
+				FC17A05E0E997C290067225A /* GrowlThreadedView.h */,
+				FC17A05F0E997C290067225A /* GrowlTicketController.h */,
+				FC17A0600E997C290067225A /* GrowlTunes-Amazon.h */,
+				FC17A0610E997C290067225A /* GrowlTunesController.h */,
+				FC17A0620E997C290067225A /* GrowlTunesPlugin.h */,
+				FC17A0630E997C290067225A /* GrowlUDPPathway.h */,
+				FC17A0640E997C290067225A /* GrowlUDPUtils.h */,
+				FC17A0650E997C290067225A /* GrowlVersionUtilities.h */,
+				FC17A0660E997C290067225A /* GrowlViewTransition.h */,
+				FC17A0670E997C290067225A /* GrowlWebKitDefines.h */,
+				FC17A0680E997C290067225A /* GrowlWebKitDisplayPlugin.h */,
+				FC17A0690E997C290067225A /* GrowlWebKitPluginHandler.h */,
+				FC17A06A0E997C290067225A /* GrowlWebKitPrefsController.h */,
+				FC17A06B0E997C290067225A /* GrowlWebKitWindowController.h */,
+				FC17A06C0E997C290067225A /* GrowlWebKitWindowView.h */,
+				FC17A06D0E997C290067225A /* GrowlWindowTransition.h */,
+				FC17A06E0E997C290067225A /* GrowlWipeWindowTransition.h */,
+				FC17A06F0E997C290067225A /* GSWebBookmark.h */,
+				FC17A0700E997C290067225A /* GTPPlugin.h */,
+				FC17A0710E997C290067225A /* HotKey.h */,
+				FC17A0720E997C290067225A /* iTunesAPI.h */,
+				FC17A0730E997C290067225A /* iTunesVisualAPI.h */,
+				FC17A0740E997C290067225A /* LoginItemsAE.h */,
+				FC17A0750E997C290067225A /* MailHeaders.h */,
+				FC17A0760E997C290067225A /* MD5Authenticator.h */,
+				FC17A0770E997C290067225A /* Message+GrowlMail.h */,
+				FC17A0780E997C290067225A /* MessageFrameworkHeaders.h */,
+				FC17A0790E997C290067225A /* MyImageView.h */,
+				FC17A07A0E997C290067225A /* NetworkNotifier.h */,
+				FC17A07B0E997C290067225A /* NotificationsArrayController.h */,
+				FC17A07C0E997C290067225A /* NSFileManager+Authentication.h */,
+				FC17A07D0E997C290067225A /* NSMutableAttributedStringAdditions.h */,
+				FC17A07E0E997C290067225A /* NSMutableDictionary+Intersection.h */,
+				FC17A07F0E997C290067225A /* NSMutableStringAdditions.h */,
+				FC17A0800E997C290067225A /* NSPreferences.h */,
+				FC17A0810E997C290067225A /* NSPreferencesModule.h */,
+				FC17A0820E997C290067225A /* NSSetAdditions.h */,
+				FC17A0830E997C290067225A /* NSString+FinderLikeSorting.h */,
+				FC17A0840E997C290067225A /* NSStringAdditions.h */,
+				FC17A0850E997C290067225A /* NSViewAdditions.h */,
+				FC17A0860E997C290067225A /* NSWindow+Transforms.h */,
+				FC17A0870E997C290067225A /* NSWindowAdditions.h */,
+				FC17A0880E997C290067225A /* NSWorkspaceAdditions.h */,
+				FC17A0890E997C290067225A /* PowerNotifier.h */,
+				FC17A08A0E997C290067225A /* PrefPaneOpener.h */,
+				FC17A08B0E997C290067225A /* PriorityTransformer.h */,
+				FC17A08C0E997C290067225A /* RRTableView.h */,
+				FC17A08D0E997C290067225A /* Safari.h */,
+				FC17A08E0E997C290067225A /* sha2.h */,
+				FC17A08F0E997C290067225A /* ShowTrackScriptCommand.h */,
+				FC17A0900E997C290067225A /* SVNRevision.h */,
+				FC17A0910E997C290067225A /* SyncNotifier.h */,
+				FC17A0920E997C290067225A /* SynergyIconSource.h */,
+				FC17A0930E997C290067225A /* TclGrowler.h */,
+				FC17A0940E997C290067225A /* TicketsArrayController.h */,
+				FC17A0950E997C290067225A /* USBNotifier.h */,
+				FC17A0960E997C290067225A /* VolumeNotifier.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* Dni */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "Dni" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dni;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = Dni;
+			productReference = 8D5B49B6048680CD000E48DA /* Dni.growlView */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "Dni" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* Dni */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* Dni */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC17A1D40E99B7EE0067225A /* DniSmokePrefs.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC179F050E9978DF0067225A /* GrowlDniSmokeWindowView.m in Sources */,
+				FC179F060E9978DF0067225A /* GrowlDniSmokeWindowController.m in Sources */,
+				FC179F070E9978DF0067225A /* GrowlDniSmokePrefsController.m in Sources */,
+				FC179F080E9978DF0067225A /* GrowlDniSmokeDisplay.m in Sources */,
+				FC17A14D0E9980540067225A /* GrowlBezierPathAdditions.c in Sources */,
+				FC17A14E0E9980540067225A /* CFDictionaryAdditions.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC17A1D20E99B7EE0067225A /* DniSmokePrefs.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC17A1D30E99B7EE0067225A /* English */,
+			);
+			name = DniSmokePrefs.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Library/Frameworks\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Dni_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				PRODUCT_NAME = Dni;
+				WRAPPER_EXTENSION = growlView;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Library/Frameworks\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Dni_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				PRODUCT_NAME = Dni;
+				WRAPPER_EXTENSION = growlView;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "Dni" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "Dni" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
